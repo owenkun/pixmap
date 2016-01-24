@@ -89,13 +89,13 @@ $(document).ready(function() {
         if(sub_length > subMax)
           sub_length = subMax;
 
-        total_child += subredditList.length;
+      total_child += subredditList.length;
       for (var j=0; j< sub_length; j++) {
         subreddit = subredditList[i].data.children[j].data;
 
         console.log(tagList[i] +" " + subreddit.display_name);
 
-        node = nodeConstruct(subreddit.display_name, subreddit.subscribers, i);
+        node = nodeConstruct(subreddit.display_name, subreddit.subscribers, j);
         nodes.push(node);
 
 
