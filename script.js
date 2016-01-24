@@ -18,7 +18,7 @@ $(document).ready(function() {
     $.ajax({
             url: request,
             beforeSend: function(xhr) {
-                 xhr.setRequestHeader("Authorization", "Bearer H2lY4TfqqdZ6tS7mj7P87j6b7dujJL")
+                 xhr.setRequestHeader("Authorization", "Bearer hC1eL948ZYWlYEqzg37ZjUyxqeea6P")
             }, success: function(data){
                 callback(data);
             }
