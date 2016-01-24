@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> nic being anal </title>
+</head>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+console.log("Hello JavaScript!");
+var address = 'https://api.clarifai.com/v1/tag/?url=';
+var img_url = 'http://i.imgur.com/UP3XIWN.png'
+var request = address.concat(img_url);
+$.ajax({
+        url: request,
+        beforeSend: function(xhr) {
+             xhr.setRequestHeader("Authorization", "Bearer anux28KbAiuOrxsc7WeQzUIKihjbfL")
+        }, success: function(data){
+            alert(data);
+            var test = JSON.stringify(data);
+            alert(test);
+            //process the JSON data etc
+        }
+})
+</script>
+</body>
+
+</html>

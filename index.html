@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <meta charset="utf-8">
+    <head>
+      <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <style>
+
+      .link {
+        stroke: #aaa;
+      }
+
+      .node text {
+      stroke:#333;
+      cursos:pointer;
+      }
+
+      .node circle{
+      stroke:#fff;
+      stroke-width:3px;
+      fill:#555;
+      }
+
+    </style>
+  <body>
+
+    <h1 align="center"> Map an image, get the subreddits, feel the wonder</h1>
+    <div class = "inputs" align="center">
+     Tags to use:
+    <input type="number" style="width:8%;" id="tags"></input>
+     Children:
+    <input type="number" style="width:8%;" id="children">
+    Image link:
+    <input type="text" style="width:20%;" id="imglink"></input><br>
+    <button type="button" id="submitbutton">Click Me!</button>
+
+    <script src="http://d3js.org/d3.v2.min.js?2.9.3"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
